@@ -20,6 +20,7 @@
           <ul class="nav navbar-nav">
             <li routerLinkActive="active" *ngIf="authService.isAuthenticated()"><a routerLink="/recipes">Recipes</a></li>
             <li routerLinkActive="active" *ngIf="authService.isAuthenticated()"><a routerLink="/mrdlist">What I need?</a></li>
+            <li routerLinkActive="active" *ngIf="authService.isAuthenticated()"><a routerLink="/video">Video Chat</a></li>
             <li class="dropdown" appDropdown *ngIf="authService.isAuthenticated()">
               <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manage<span class="caret"></span></a>
               <ul class="dropdown-menu">

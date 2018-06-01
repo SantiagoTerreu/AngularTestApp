@@ -10,6 +10,7 @@ import { SigninComponent } from "./auth/signin/signin.component";
 import { AuthService } from "./auth/auth.service";
 import { AuthGuardService } from "./auth/auth-guard.service";
 
+
 const appRoutes: Routes = [
     { path: '', redirectTo: '/signin', pathMatch: 'full' },
     { path: 'recipes', component: RecipesComponent, children: [
@@ -21,6 +22,8 @@ const appRoutes: Routes = [
     { path: 'mrdlist', component: MurderComponent },
     { path:  'signup', component: SignupComponent},
     { path:  'signin', component: SigninComponent},
+
+
 ];
 
 @NgModule({
